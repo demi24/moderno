@@ -270,7 +270,7 @@
     max-width: 370px;
     text-align: center;
     padding: 0px 15px;
-    &-images{
+    &-images {
       width: 114px;
       height: 114px;
       background-color: #fff;
@@ -279,43 +279,80 @@
       justify-content: center;
       align-items: center;
       margin: 0 auto 30px;
-      &:hover{
-        transition: all .5s;
+      &:hover {
+        transition: all 0.5s;
         background-color: $green;
       }
     }
-    &-title{
-color: #fff;
-margin-bottom: 25px;
-@include f500;
-font-size: 24px;
-&:hover{
-  transition: all .5s;
-  color: $green;
-}
+    &-title {
+      color: #fff;
+      margin-bottom: 25px;
+      @include f500;
+      font-size: 24px;
+      &:hover {
+        transition: all 0.5s;
+        color: $green;
+      }
     }
-    &-text{
+    &-text {
       font-size: 15px;
-
     }
   }
 }
-.icosvg-1{
-  svg{
+.icosvg-1 {
+  svg {
     width: 50px;
   }
 }
-.icosvg-2{
-  svg{
+.icosvg-2 {
+  svg {
     width: 70px;
   }
 }
-.icosvg-3{
-  svg{
+.icosvg-3 {
+  svg {
     width: 86px;
   }
 }
 
-
 //end advantages
+//start author
+.author {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box {
+    width: 100%;
+    max-width: 650px;
+    min-height: 215px;
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    max-width: 260px;
+    margin-right: 45px;
+    span {
+      @include f700;
+    }
+  }
+  &__link {
+    height: 64px;
+    background-color: #fff;
+    padding: 14px 40px;
+    line-height: 36px;
+    
+
+  }
+}
+
+//end author
 @import "media";
