@@ -52,11 +52,21 @@
     color: #fff;
   }
 }
+/*start search*/
 .search {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 532px;
+  &.page-search{
+    min-height: 230px;
+    .search__inner{
+      padding: 55px 0px 70px;
+      &-text{
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 .search__inner {
   padding: 155px 0 100px;
