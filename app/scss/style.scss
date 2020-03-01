@@ -4,6 +4,14 @@
 @import "fonts";
 
 //start header
+.header{
+  background-color: #fff;
+}
+
+.menu__btn,
+.header__btn-menu{
+  display: none;
+}
 .header__circle {
   margin-right: 15px;
   &.active {
@@ -46,12 +54,12 @@
   }
 }
 .basket {
+  margin-right: 20px;
   span {
     background-color: $green;
   }
 }
 .user {
-  margin-left: 20px;
   margin-right: 25px;
   padding-right: 20px;
   position: relative;
@@ -791,7 +799,6 @@ line-height: 18px;
   }
 }
 //end footer
-@import "media";
 //start product-page
 .product-page__inner {
   display: flex;
@@ -1134,3 +1141,4 @@ button.icon-unsorted {
     }
   }
 }
+@import "media";
