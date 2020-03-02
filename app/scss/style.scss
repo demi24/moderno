@@ -1852,6 +1852,7 @@ button.icon-unsorted {
 .profile-settings {
   .product-one__tabs.settings__tabs {
     .tabs span {
+      position: relative;
       @include f500;
       font-family: "Roboto", sans-serif !important;
       color: #707070;
@@ -1861,7 +1862,7 @@ button.icon-unsorted {
       &::before {
         font-family: "icomoon";
         position: absolute;
-        left: 34px;
+        left: 24px;
         color: #d0d0d0;
         font-size: 14px;
       }
