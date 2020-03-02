@@ -1747,6 +1747,7 @@ button.icon-unsorted {
 }
 //end contact
 //start settings
+
 .settings {
   padding-bottom: 100px;
 }
@@ -1846,6 +1847,196 @@ button.icon-unsorted {
     color: #707070;
   }
 }
-
 //end settings
+//start profile
+.profile-settings {
+  .product-one__tabs.settings__tabs {
+    .tabs span {
+      @include f500;
+      font-family: "Roboto", sans-serif !important;
+      color: #707070;
+      &.active::before {
+        color: $green;
+      }
+      &::before {
+        font-family: "icomoon";
+        position: absolute;
+        left: 34px;
+        color: #d0d0d0;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.profile__inner {
+  display: flex;
+  margin-bottom: 30px;
+}
+.profile__aside {
+  margin-right: 30px;
+  max-width: 270px;
+  width: 100%;
+  & .footer__social__link {
+    margin-bottom: 30px;
+  }
+}
+.profile__aside-content {
+  width: 100%;
+}
+.profile-status {
+  padding: 2px 9px 5px 30px;
+  height: 28px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  position: relative;
+  font-size: 13px;
+  text-align: center;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    left: 13px;
+    top: 9px;
+  }
+}
+.profile-on {
+  &::before {
+    background-color: $green;
+  }
+}
+.profile-off {
+  &::before {
+    background-color: $red;
+  }
+}
+.profile__aside-link {
+  margin-bottom: 13px;
+}
+.profile__aside-message {
+  margin-bottom: 17px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  @include f500;
+  background-color: $text;
+  padding: 18px 10px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(69, 90, 100, 0.75);
+  &::before {
+    content: "\f003";
+    position: absolute;
+    font-family: "icomoon";
+    font-size: 16px;
+    left: 50px;
+    top: 17px;
+  }
+}
+.profile__aside-following {
+  margin-bottom: 17px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  @include f700;
+  background-color: $green;
+  padding: 18px 10px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(69, 90, 100, 0.75);
+}
+
+.profile__banner {
+  border: 1px solid #d7d7d7;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 35px;
+}
+.profile__banner-images {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 829px;
+  min-height: 332px;
+}
+.profile__items {
+  display: flex;
+  border: 1px solid #d7d7d7;
+}
+.profile___item {
+  width: 25%;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0px 17px;
+  & + .profile___item {
+    border-left: 1px solid #d7d7d7;
+  }
+}
+.profile___item-title {
+  font-size: 14px;
+  color: $bg;
+  @include f500;
+}
+.profile__item-content {
+  color: #707070;
+  font-size: 14px;
+  @include f500;
+  &.profile__item-sales {
+    color: $bg;
+  }
+}
+.personal-box {
+  background-color: #fff;
+  padding: 35px 40px 25px;
+  border: 1px solid #d7d7d7;
+}
+.personal-box__title {
+  font-size: 20px;
+  @include f700;
+  margin-bottom: 25px;
+  color: $bg;
+  font-size: 20px;
+}
+.personal-box__text {
+  margin-bottom: 20px;
+  p {
+    line-height: 24px;
+    color: #707070;
+  }
+}
+.personal-box__item-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.personal-box__item-name {
+  color: $bg;
+  font-size: 16px;
+  @include f500;
+  font-style: italic;
+}
+.personal-box__item-number {
+  color: $bg;
+  font-size: 16px;
+  @include f700;
+}
+.personal-box__line {
+  max-width: 779px;
+  height: 15px;
+  background-color: #f4f4f4;
+  border-radius: 3px;
+  margin-bottom: 23px;
+  span {
+    display: block;
+    border-radius: 3px;
+    height: 15px;
+    background-image: url(../img/skills-bg.png);
+    background-repeat: repeat-x;
+  }
+}
+
+//end profile
 @import "media";
