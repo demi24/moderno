@@ -366,6 +366,99 @@
   }
 }
 //end header
+//start modal
+#modal {
+  background-color: $green;
+  max-width: 730px;
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+.login__title {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 48px;
+  margin-bottom: 40px;
+  @include f700;
+}
+.login__wrapper {
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  label {
+    position: relative;
+    &::before {
+      position: absolute;
+      font-family: "icomoon";
+      font-size: 14px;
+      color: #fff;
+      left: 18px;
+      width: 12px;
+      height: 14px;
+      top: -3px;
+    }
+  }
+  .login__label-name::before {
+    content: "\f007";
+  }
+  .login__label-pas::before {
+    content: "\f023";
+  }
+  input {
+    height: 47px;
+    margin-bottom: 8px;
+    border: none;
+    background-color: #76ae36;
+    color: #fff;
+    padding-left: 40px;
+    width: 100%;
+    &::placeholder {
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+  button {
+    margin-top: 19px;
+    padding: 18px 0 16px;
+    background-color: #fff;
+    width: 140px;
+    text-transform: uppercase;
+    border: none;
+    margin-right: 10px;
+    @include f700;
+    color: #000;
+    box-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
+  }
+}
+.lost-pass {
+  display: block;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+}
+.create-acc {
+  margin-top: 19px;
+  padding: 15px 0 15px 28px;
+  text-align: center;
+  width: 245px;
+  background-color: #76ae36;
+  font-size: 18px;
+  color: #fff;
+  position: relative;
+  &::before {
+    content: "\f044";
+    font-family: "icomoon";
+    position: absolute;
+    top: 15px;
+    left: 30px;
+  }
+}
+.fancybox-button svg path{
+  color: #fff;
+}
+//end modal
 //start products
 .products__inner-box {
   display: flex;
@@ -1394,7 +1487,7 @@ button.icon-unsorted {
     text-align: center;
     position: relative;
     font-size: 20px;
-    &::before{
+    &::before {
       top: 6px;
       position: absolute;
       left: 0;
@@ -1404,7 +1497,7 @@ button.icon-unsorted {
       margin-left: 4px;
     }
   }
-  .icon-meh-o{
+  .icon-meh-o {
     background: url(../img/awards/awards-orange.png);
     width: 34px;
     height: 37px;
@@ -1436,29 +1529,28 @@ button.icon-unsorted {
   @include f300;
   font-size: 16px;
   color: #707070;
-  span{
+  span {
     color: #263238;
     font-size: 20px;
     @include f700;
     padding-right: 13px;
-    &::before{
+    &::before {
       content: "\f07a";
-      font-family: 'icomoon';
+      font-family: "icomoon";
       color: #a6b5bb;
       padding-right: 20px;
     }
   }
 }
-.aside__item.sales-number{
- padding-bottom: 25px;
-
+.aside__item.sales-number {
+  padding-bottom: 25px;
 }
-.information__line{
+.information__line {
   font-size: 14px;
   color: #70838d;
   margin-top: 20px;
   line-height: 18px;
-  span{
+  span {
     color: $bg;
     @include f500;
   }
