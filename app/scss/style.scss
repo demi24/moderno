@@ -1743,7 +1743,7 @@ button.icon-unsorted {
 }
 .contact__form-row {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 //end contact
 //start settings
@@ -1824,7 +1824,7 @@ button.icon-unsorted {
   display: flex;
   align-items: center;
   label {
-    width: 260px;
+    width: 321px;
     color: #444;
   }
   input {
@@ -1949,18 +1949,21 @@ button.icon-unsorted {
   text-align: center;
   box-shadow: 0 1px 2px rgba(69, 90, 100, 0.75);
 }
-
-.profile__banner {
-  border: 1px solid #d7d7d7;
+.profile__content{
+  max-width: 100%;
+  width: 100%;
+}
+.profile__banner{
   padding: 20px;
+  border: 1px solid #dedede;
   background-color: #fff;
   margin-bottom: 35px;
 }
 .profile__banner-images {
+  background-image: url(../img/content/banner-here.jpg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-  width: 829px;
+  background-position: center center;
   min-height: 332px;
 }
 .profile__items {
@@ -2147,6 +2150,7 @@ button.icon-unsorted {
   .jq-selectbox {
     width: 100%;
   }
+
   .jq-selectbox__select {
     border: 1px solid #d7d7d7;
     background: #f9f9f9;
@@ -2242,6 +2246,7 @@ button.icon-unsorted {
 .jq-selectbox {
   width: 100%;
 }
+
 .jq-selectbox__select {
   border: 1px solid #d7d7d7;
   background: #f9f9f9;
@@ -2271,7 +2276,7 @@ button.icon-unsorted {
 .jq-file.focused .jq-file__name {
   border: none;
 }
-.withdrawals__content-items{
+.withdrawals__content-items {
   margin-bottom: 35px;
 }
 .withdrawals__content-item {
@@ -2280,7 +2285,7 @@ button.icon-unsorted {
   align-items: center;
   color: #444;
   font-size: 13px;
-  &:nth-child(odd){
+  &:nth-child(odd) {
     background-color: #f9f9f9;
   }
 }
@@ -2290,22 +2295,18 @@ button.icon-unsorted {
   @include f500;
 }
 .withdrawals__content-email {
- width: 180px;
+  width: 180px;
 }
 .withdrawals__content-price {
- width: 70px;
- @include f700;
-
+  width: 70px;
+  @include f700;
 }
-.withdrawals__content-status { 
-   width: 88px;
-   @include f700;
-  &.withdrawals__content-paid{
-    color: $green;  
+.withdrawals__content-status {
+  width: 88px;
+  @include f700;
+  &.withdrawals__content-paid {
+    color: $green;
   }
 }
-.withdrawals__content-items {
-}
-
 //end withdrawals
 @import "media";
